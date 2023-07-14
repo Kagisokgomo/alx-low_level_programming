@@ -3,7 +3,6 @@
  * main - Entry point
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	char C;
@@ -12,18 +11,16 @@ int main(void)
 
 	C = 'a';
 	d = 'A';
-	while
+        while
 		(C <= 'Z') {
 			putchar(C);
 			C++;
-
 		}
 	while
-	       (d <= 'Z') {
-	               putchar (d);
-		       d++;
-	       }
+		(d <= 'Z') {
+                       putchar (d);
+                       d++;
+		}
 	putchar('\n');
 	return (0);
-}
-              	
+}	
