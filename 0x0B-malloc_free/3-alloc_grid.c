@@ -6,7 +6,7 @@
  * @height: heeght input
  * Return: pointer to 2 dim, array
  */
-int **allooc_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 	int **mee;
 	int x, y;
@@ -14,7 +14,7 @@ int **allooc_grid(int width, int height)
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	mee = malloc(sizeof(int*) *height);
+	mee = malloc(sizeof(int *) * height);
 
 	if (mee == NULL)
 		return (NULL);
