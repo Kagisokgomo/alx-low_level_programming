@@ -1,6 +1,5 @@
-#include <stdlib.h>
 #include "dog.h"
-
+#include <stdlib.h>
 /**
  * init_dog -the new dog struct whoose variable is to be
  * initialized
