@@ -28,7 +28,7 @@ void print_opcodes(char *a, int n)
  *
  * Return: always 0
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int n;
 
@@ -37,7 +37,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(1);
 	}
-	n = atoi(argv[i]);
+	n = atoi(argv[1]);
 	if (n < 0)
 	{
 		printf("Error\n");
