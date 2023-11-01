@@ -34,7 +34,7 @@ void check_elf(unsigned char *e_ident)
 				e_ident[index] != 'L' &&
 				e_ident[index] != 'F')
 		{
-			dprint(STDERR_FILENO, "Error: Not an ELF file\n");
+			dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
 			exit(98);
 		}
 	}
@@ -132,7 +132,7 @@ void print_osabi(unsigned char *e_ident)
 		case ELFOSABI_SOLARIS:
 			printf("UNIX - Solaris\n");
 			break;
-		case ELFOSABIO_IRIX:
+		case ELFOSABI_IRIX:
 			printf("UNIX - IRIX\n");
 			break;
 		case ELFOSABI_FREEBSD:

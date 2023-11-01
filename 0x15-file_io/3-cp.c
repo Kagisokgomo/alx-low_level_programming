@@ -25,11 +25,11 @@ int main(int argc, char *argv[])
 	}
 	src = open(argv[1], O_RDONLY);
 	check_IO_stat(src, -1, argv[1], '0');
-	dest = open(argv[2], O_WRONGLY | O_CREAT | -_TRUNC, mode);
+	dest = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, mode);
 	check_IO_stat(dest, -1, argv[2], 'W');
 	while (n_read == 1024)
 	{
-		n_read = read(src, buffer, sizeof(buffer));
+		n_read = read(src, setbuffer, sizeof(buffer));
 		if (n_read == -1)
 			check_IO_stat(-1, -1, argv[1], '0');
 		wrote = write(dest, buffer, n_read);
