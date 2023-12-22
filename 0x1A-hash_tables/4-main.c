@@ -12,7 +12,7 @@ int main(void)
 {
 	hash_table_t *ht;
 	char *value;
-	
+
 	ht = hash_table_create(1024);
 	hash_table_set(ht, "c", "fun");
 	hash_table_set(ht, "python", "awesome");
@@ -22,7 +22,7 @@ int main(void)
 	hash_table_set(ht, "Betty", "Cool");
 	hash_table_set(ht, "98", "Battery Street");
 	hash_table_set(ht, "c", "isfun");
-	
+
 	value = hash_table_get(ht, "python");
 	printf("%s:%s\n", "python", value);
 	value = hash_table_get(ht, "Bob");
